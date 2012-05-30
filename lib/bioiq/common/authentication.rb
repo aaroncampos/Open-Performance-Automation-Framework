@@ -47,9 +47,9 @@ class Authentication
   
   # Test kits tab
   def test_kits
-    @request.add('GET /employee-health-wellness-tests HTTP/1.1')
-    @request.add('GET /themes/bioiq/stylesheets/partner.css?1337967627 HTTP/1.1')
-    @request.add('GET /javascripts/application.js?1337924356 HTTP/1.1')
+    @request.add('/employee-health-wellness-tests')
+    @request.add('/themes/bioiq/stylesheets/partner.css?1337967627')
+    @request.add('/javascripts/application.js?1337924356')
   end
   
   # Register a new user
@@ -65,9 +65,9 @@ class Authentication
     
     @request.add_thinktime(5)
     
-    @request.add('GET /signup/path HTTP/1.1')
-    @request.add('GET /themes/bioiq/stylesheets/partner.css?1337967627 HTTP/1.1')
-    @request.add('GET /javascripts/application.js?1337924356 HTTP/1.1')
+    @request.add('/signup/path')
+    @request.add('/themes/bioiq/stylesheets/partner.css?1337967627')
+    @request.add('/javascripts/application.js?1337924356')
     
     
   end
